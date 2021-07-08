@@ -30,8 +30,9 @@ function expressionCalculator(expr) {
   let divisionByZero = '/ 0';
   if (expr.includes(divisionByZero)) {
       throw new 'TypeError: Division by zero.'
-  } else {
-  return (new Function('return ' + expr))()
+  } 
+  else {
+    return (new Function('return ' + expr))()
   }
 }
 
