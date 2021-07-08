@@ -9,7 +9,7 @@ function expressionCalculator(expr) {
   let stack = [];
   let res;
   for (let bracket of expr) {
-      if (openPreority.includes(bracket)) {
+      if (openPriority.includes(bracket)) {
           stack.push(bracket);
       }
   };
